@@ -188,7 +188,45 @@
             </div>
           </div>
           <div class="col">
-            <h2 style="color: black;font-size: 30px;">SWAY MONITORING</h2>
+            <div class="card shadow mb-3">
+              <div class="card-header py-3">
+                <h5 class="m-0 font-weight-bold text-primary">SWAY MONITORING</h5>
+              </div>
+              <div class="card-body" style="width: 40rem; height: 40rem">
+                <form>
+                  <label style="color: black; font-size: 1.2em; padding-top: 10%; padding-left:12%; padding-right:10px;" for="xmove">Forward/Backward Movement:</label>
+                  <input type="text" style="text-align: right; padding-right:5px; font-size: 1.2em" placeholder="0.0000000000" id="xmove" name="xmove"><br><br>
+                  <label style="color: black; padding-left:12%; padding-right:91px; font-size: 1.2em;" for="ymove">Up/Down Movement:</label>
+                  <input type="text" style="text-align: right; padding-right:5px; font-size: 1.2em" placeholder="0.0000000000" id="ymove" name="Ymove"><br><br>
+                  <label style="color: black; padding-left:12%; padding-right:87px; font-size: 1.2em;" for="zmove">Left/Right Movement:</label>
+                  <input type="text" style="text-align: right; padding-right:5px; font-size: 1.2em" placeholder="0.0000000000" id="zmove" name="zmove"><br><br>
+                  <!-- <label style="color: black; padding-right:10%; font-size: 1.2em;" for="updown">Up/Down:</label> -->
+                  <!-- <input type="text" style="text-align: right; padding-right:5px; font-size: 1.2em" placeholder="0.0000000000" id="updown" name="updown"><br><br>
+                  <label style="color: black; padding-right:10%; font-size: 1.2em;" for="sidetoside">Side to Side:</label>
+                  <input type="text" style="text-align: right; padding-right:5px; font-size: 1.2em" placeholder="0.0000000000" id="sidetoside" name="sidetoside"><br><br>
+                  <label style="color: black; padding-right:10%; font-size: 1.2em;" for="frontback">Left/Right Leaning:</label> -->
+                  <!-- <input type="text" style="text-align: right; padding-right:5px; font-size: 1.2em" placeholder="0.0000000000" id="frontback" name="frontback"><br><br> -->
+
+                  <!-- Z-axis -->
+                  <label style="color: black; padding-left: 12%; padding-right:31px; font-size: 1.2em;" for="diaglean">Forward/Backward Leaning:</label>
+                  <input type="text" style="text-align: right; padding-right:5px; font-size: 1.2em" placeholder="0.0000000000" id="diaglean" name="diaglean"><br><br>
+                  <!-- X-axis -->
+                  <label style="color: black; padding-left:12%; padding-right:109px; font-size: 1.2em;" for="fblean">Left/Right Leaning:</label>
+                  <input type="text" style="text-align: right; padding-right:5px; font-size: 1.2em" placeholder="0.0000000000" id="fblean" name="fblean"><br><br>
+                  <!-- Y-axis -->
+                  <label style="color: black; padding-left:12%; padding-right:195px; font-size: 1.2em;" for="siderot">Rotation:</label>
+                  <input type="text" style="text-align: right; padding-right:5px; font-size: 1.2em" placeholder="0.0000000000" id="siderot" name="siderot"><br><br>
+                </form>
+                <button type="button" style="padding-top:10%; justify-content:center" class="btn btn-primary btn-lg">BEGIN EXERCISE</button>
+            <button type="button" class="btn btn-info btn-circle" class="addMore" title="Exercise Steps 
+            &#10 Step 1: Put your right foot in front of your left foot so that the heel &#10 of your right foot touches the top of the toes of your left foot.
+            &#10 Step 2: Move your left foot in front of your right, putting your weight on your heel.
+            &#10 Step 3: Shift your weight to your toes. 
+            &#10 Step 4: Repeat the step with your left foot. Walk this way for 20 steps.">
+              <i class="glyphicon glyphicon-ok"></i>Info</button>
+              </div>
+            </div>
+          </div>
             <!--p style="color:black;">X move:
               <br>
               Y move:
@@ -207,37 +245,9 @@
               <br>
               Diagonal Leaning:
             </p-->
-            <form>
-              <label style="color: black;" for="xmove">X Move:</label>
-              <input type="text" id="xmove" name="xmove"><br>
-              <label style="color: black;" for="ymove">Y Move:</label>
-              <input type="text" id="ymove" name="Ymove"><br>
-              <label style="color: black;" for="zmove">Z Move:</label>
-              <input type="text" id="zmove" name="zmove"><br>
-              <label style="color: black;" for="updown">Up/Down:</label>
-              <input type="text" id="updown" name="updown"><br>
-              <label style="color: black;" for="sidetoside">Side to Side:</label>
-              <input type="text" id="sidetoside" name="sidetoside"><br>
-              <label style="color: black;" for="frontback">Front/Back:</label>
-              <input type="text" id="frontback" name="frontback"><br>
-              <label style="color: black;" for="fblean">Front and Back Leaning:</label>
-              <input type="text" id="fblean" name="fblean"><br>
-              <label style="color: black;" for="siderot">Side Rotation:</label>
-              <input type="text" id="siderot" name="siderot"><br>
-              <label style="color: black;" for="diaglean">Diagonal Leaning:</label>
-              <input type="text" id="diaglean" name="diaglean"><br>
-            </form>
 
-            <button type="button" class="btn btn-primary btn-lg">BEGIN</button>
-            <button type="button" class="btn btn-info btn-circle" class="addMore" title="Exercise Steps 
-            &#10 Step 1: Put your right foot in front of your left foot so that the heel &#10 of your right foot touches the top of the toes of your left foot.
-            &#10 Step 2: Move your left foot in front of your right, putting your weight on your heel.
-            &#10 Step 3: Shift your weight to your toes. 
-            &#10 Step 4: Repeat the step with your left foot. Walk this way for 20 steps.">
-              <i class="glyphicon glyphicon-ok"></i>Info</button>
+            
 
-          </div>
-        </div>
     
       <!-- End of Main Content -->
 
