@@ -438,11 +438,29 @@ small,
   font-weight: 400;
 }
 
+.column{float:left;width:50%;padding:10px;height:1000px;}
+.row:after{content:"";display:table;clear:both;}
+
 mark,
 .mark {
   padding: 0.2em;
   background-color: #fcf8e3;
 }
+
+.addMore{
+  border: none;
+  width: 100px;
+  height: 1000px;
+  background-color: #eee;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  padding-right:20%;
+}
+.addMore:hover{
+  border: 1px solid #888;
+  background-color: #ddd;
+}
+
 
 .list-unstyled {
   padding-left: 0;
